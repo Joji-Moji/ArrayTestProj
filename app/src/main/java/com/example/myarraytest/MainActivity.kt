@@ -10,7 +10,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         val numbers = arrayOf(3,2,5,6)
         Log.v("MyLog", "Number ${numbers.contentToString()}")
-        numbers.reverse()
+        numbers.sort()
         Log.v("MyLog", "Number ${numbers.contentToString()}")
     }
 }
