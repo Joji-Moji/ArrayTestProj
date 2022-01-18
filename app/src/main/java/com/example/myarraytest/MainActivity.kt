@@ -8,9 +8,13 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        val numbers = arrayOf(3,2,5,6)
-        Log.v("MyLog", "Number ${numbers.contentToString()}")
-        numbers.sort()
-        Log.v("MyLog", "Number ${numbers.contentToString()}")
+        var index = 1000
+        Log.v("MyLog", "1000 - 7")
+        while (index>7){
+            index -= 7
+
+            Log.v("MyLog", "$index - 7")
+
+        }
     }
 }
